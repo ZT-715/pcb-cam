@@ -76,13 +76,13 @@ Os scripts de `ensaios/` reproduzem os números dos Capítulos 7 e 8. No MATLAB,
 | `comparar_isolamento` | Isolamento no pior caso, na configuração adotada e no melhor caso | Seção 8.6 |
 | `efeito_tempo_minimo` | Acréscimo de tempo causado pelo limite de 16 ms por segmento | Seção 8.7 |
 
-Os dados medidos estão em `ensaios/dados/`: os códigos G e os tempos dos ensaios (`ensaios_maquina/tempos_medidos.csv`) e os códigos G executados na PCB II (`pcb_ii/`). A remoção de cobre da PCB III foi cronometrada com 4 passes de isolamento e 20% de sobreposição, e `validar_placas` planeja essa placa de novo com essa configuração.
+Os dados medidos estão em `ensaios/dados/`: os códigos G e os tempos dos ensaios (`ensaios_maquina/tempos_medidos.csv`) e os códigos G executados na PCB I (`pcb_i/`) e na PCB II (`pcb_ii/`). A remoção de cobre da PCB III foi cronometrada com 4 passes de isolamento e 20% de sobreposição, e `validar_placas` planeja essa placa de novo com essa configuração.
 
 ## Placas
 
 | Placa | Pasta | Descrição |
 |---|---|---|
-| PCB I | `placas/pcb_i` | Face simples, 10 furos. É a única em que o desbaste em zigue-zague é escolhido. Os tempos ainda serão medidos. |
+| PCB I | `placas/pcb_i` | Face simples, 10 furos. É a única em que o desbaste em zigue-zague é escolhido. |
 | PCB II | `placas/pcb_ii` | Dupla face, 39 furos e grandes áreas de cobre. |
 | PCB III | `placas/pcb_iii` | Dupla face, 385 furos e trilhas densas. |
 

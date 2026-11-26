@@ -4,10 +4,14 @@
 
 raiz = configurar();
 modelo = modelo_maquina_padrao();
+executados_pcb_i = fullfile(raiz, 'ensaios', 'dados', 'pcb_i');
 executados_pcb_ii = fullfile(raiz, 'ensaios', 'dados', 'pcb_ii');
 pcb_iii = planejar_placa("pcb_iii", passes=4, sobreposicao=0.2);
 
 operacoes = [
+    comparar("PCB I, NCC superior",   fullfile(executados_pcb_i, 'placa_2_top_ncc.ngc'),     minutos_e_segundos(8, 15),    modelo)
+    comparar("PCB I, furos",          fullfile(executados_pcb_i, 'placa_3_top_furos.ngc'),   minutos_e_segundos(1, 1),     modelo)
+    comparar("PCB I, recorte",        fullfile(executados_pcb_i, 'placa_6_recorte.ngc'),     minutos_e_segundos(2, 49),    modelo)
     comparar("PCB II, NCC superior",  fullfile(executados_pcb_ii, 'placa_2_top_ncc.ngc'),    minutos_e_segundos(20, 11),   modelo)
     comparar("PCB II, NCC inferior",  fullfile(executados_pcb_ii, 'placa_4_bottom_ncc.ngc'), minutos_e_segundos(19, 55),   modelo)
     comparar("PCB II, furos",         fullfile(executados_pcb_ii, 'placa_3_top_furos.ngc'),  minutos_e_segundos(3, 9),     modelo)
