@@ -1,0 +1,17 @@
+arquivo,ensaio,segmento_mm,desvio_graus,avanco_mm_min,medido_s
+T0_referencia,T0,,,0,4
+T1_blocos_s0p005_F3000,T1,0.005,,3000,127
+T1_blocos_s0p02_F3000,T1,0.02,,3000,125
+T1_blocos_s0p1_F3000,T1,0.1,,3000,125
+T1_blocos_s0p4_F3000,T1,0.4,,3000,127
+T1_blocos_s1_F3000,T1,1,,3000,173
+T1b_blocos_s0p02_F600,T1,0.02,,600,127
+T3_canto_000deg_L10,T3,10,0,3000,149
+T3_canto_030deg_L10,T3,10,30,3000,260
+T3_canto_060deg_L10,T3,10,60,3000,264
+T3_canto_075deg_L10,T3,10,75,3000,258
+T3_canto_090deg_L10,T3,10,90,3000,246
+T3_canto_120deg_L10,T3,10,120,3000,275
+T3_canto_150deg_L10,T3,10,150,3000,291
+T3_canto_030deg_L2,T3,2,30,3000,474
+T3_canto_090deg_L2,T3,2,90,3000,501
