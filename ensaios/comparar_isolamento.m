@@ -1,4 +1,4 @@
-%% Tempo do isolamento no pior caso, na configuração adotada e no melhor caso (Seção 8.5)
+%% Tempo do isolamento no pior caso, na configuração adotada e no melhor caso (Seção 8.6)
 
 configurar();
 
@@ -9,7 +9,7 @@ configuracoes = [
 ];
 
 resumo = table();
-for placa = ["pcb_ii", "pcb_iii"]
+for placa = ["pcb_i", "pcb_ii", "pcb_iii"]
     resultado = planejar_placa(placa);
     parametros = parametros_ncc(resultado.job);
     for face = faces(resultado)
